@@ -6,4 +6,7 @@ Para mac / linux
   sh gradlew bootRun
 Para windows
   gradlew.bat bootRun
+# ejecucion de tests
+ mac/ linux: sh gradlew test
+ windos gradlew.bat test
   

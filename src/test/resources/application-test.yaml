@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:h2:mem:db;DB_CLOSE_DELAY=10;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+    #data-source-class-name: org.h2.jdbcx.JdbcDataSource

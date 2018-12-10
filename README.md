@@ -9,4 +9,7 @@ Para windows
 # ejecucion de tests
  mac/ linux: sh gradlew test
  windos gradlew.bat test
+
+#Respuesta a pregunta 1.
+https://docs.google.com/document/d/1pMbZvYbf-JaIoJEx1aq4QgCfkjZWQwCwRsnAGr_88zY/edit?usp=sharing
   

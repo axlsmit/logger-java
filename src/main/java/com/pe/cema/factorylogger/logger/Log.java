@@ -4,22 +4,21 @@ import com.pe.cema.factorylogger.enums.TipoErrorLogMessage;
 import com.pe.cema.factorylogger.exception.LoggerException;
 import com.pe.cema.factorylogger.factory.LoggerHandlerFactory;
 import com.pe.cema.factorylogger.model.repositories.LogRepository;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@NoArgsConstructor
 public class Log {
 
     private static Logger logger;
 
-    private Log(String name) {
-        logger = Logger.getLogger(name);
-    }
-
     public static Log initializeLogger(Class className, String fileName, LogRepository logRepository, Level level) {
-        Log log = new Log(className.getCanonicalName());
+        logger = Logger.getLogger(className.getCanonicalName());
+        Log log = new Log();
         List<Handler> handlers = LoggerHandlerFactory.getAvailableHAndlers(fileName, logRepository, level);
         validateHandlersConfiguration(handlers);
         handlers.forEach(logger::addHandler);

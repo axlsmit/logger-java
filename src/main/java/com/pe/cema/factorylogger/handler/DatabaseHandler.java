@@ -30,7 +30,7 @@ public class DatabaseHandler extends Handler {
     }
 
     @Override
-    public void close() throws SecurityException {
-
+    public void close() {
+        logRepository.flush();
     }
 }

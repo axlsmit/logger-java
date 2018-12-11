@@ -1,12 +1,14 @@
 package com.pe.cema.factorylogger.model.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @Entity
-@Table(name="LOG_ENTITY")
+@Table(name = "LOG_ENTITY")
 public class LogEntity {
 
     @Id

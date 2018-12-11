@@ -4,7 +4,7 @@ import com.pe.cema.factorylogger.enums.TipoErrorLogMessage;
 
 public class LoggerException extends RuntimeException {
 
-    TipoErrorLogMessage tipoErrorLogMessage;
+    private final TipoErrorLogMessage tipoErrorLogMessage;
 
     public LoggerException(TipoErrorLogMessage tipoErrorLogMessage) {
         this.tipoErrorLogMessage = tipoErrorLogMessage;

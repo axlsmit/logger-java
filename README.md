@@ -1,9 +1,11 @@
 # logger-java
-[![Build Status](https://travis-ci.org/watson-developer-cloud/spring-boot-starter.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/spring-boot-starter) #unittest
+[![Build Status](https://travis-ci.org/watson-developer-cloud/spring-boot-starter.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/spring-boot-starter)
 Repositorio con prueba de concepto sobre el api logging de java 8.
 # Ejecucion de tests
  ./gradlew test
 # Análisis de código estático
+Puedes revisarlo en https://sonarcloud.io/dashboard?id=axlsmit_logger-java
+O ejecutando las siguientes líneas.
 >  ./gradlew sonarqube \
 >  -Dsonar.projectKey=axlsmit_logger-java \
 >  -Dsonar.organization=axlsmit-github \

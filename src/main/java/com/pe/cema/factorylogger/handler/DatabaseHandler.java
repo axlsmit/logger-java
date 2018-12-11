@@ -22,6 +22,7 @@ public class DatabaseHandler extends Handler {
         logEntity.setLevel(record.getLevel().getName());
         logEntity.setMessage(record.getMessage());
         logRepository.save(logEntity);
+        flush();
     }
 
     @Override

@@ -1,4 +1,4 @@
-# logger-java
+# logger-java {<img src="https://travis-ci.org/axlsmit/logger-java.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/axlsmit/logger-java]
 Repositorio con prueba de concepto sobre el api logging de java 8.
 # ejecución
 Para probar este proyecto debes ejecutar lo siguiente.

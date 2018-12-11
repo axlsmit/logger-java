@@ -1,5 +1,6 @@
 package com.pe.cema.factorylogger.logger;
 
+import com.pe.cema.factorylogger.enums.LogLevel;
 import com.pe.cema.factorylogger.enums.TipoErrorLogMessage;
 import com.pe.cema.factorylogger.exception.LoggerException;
 import com.pe.cema.factorylogger.factory.LoggerHandlerFactory;
@@ -16,7 +17,7 @@ public class Log {
 
     private static Logger logger;
 
-    public static Log initializeLogger(Class className, String fileName, LogRepository logRepository, Level level) {
+    public static Log initializeLogger(Class className, String fileName, LogRepository logRepository, LogLevel level) {
         logger = Logger.getLogger(className.getCanonicalName());
         Log log = new Log();
         List<Handler> handlers = LoggerHandlerFactory.getAvailableHAndlers(fileName, logRepository, level);

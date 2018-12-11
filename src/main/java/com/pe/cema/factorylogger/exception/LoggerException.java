@@ -12,6 +12,6 @@ public class LoggerException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return this.tipoErrorLogMessage.getMessage();
+        return String.format("%s: %s", this.tipoErrorLogMessage.getCode(), this.tipoErrorLogMessage.getMessage());
     }
 }

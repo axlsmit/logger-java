@@ -1,5 +1,5 @@
 # logger-java
-[![Build Status](https://travis-ci.org/watson-developer-cloud/spring-boot-starter.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/spring-boot-starter)\
+[![Build Status](https://travis-ci.org/axlsmit/logger-java.svg?branch=master)](https://travis-ci.org/axlsmit/logger-java)\
 Repositorio con prueba de concepto sobre el api logging de java 8.
 # Ejecución de tests
  ./gradlew test
